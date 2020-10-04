@@ -80,11 +80,62 @@ Several Gestalt principles describe our visual system’s tendency to resolve am
 
 **Gestalt principles: Closure**
 
-**Gestalt principles: Simmetry**
+This princible is also related to _Continuity_. In fact, clouser states that human visual system automatically closes open figures so that they are perceived as a whole. 
+
+ <img src="./images/closure.png" alt="drawing" width="300"/>
+
+ This principles applies to GUIs. For example stacks of objects in a icon make users perceive those stacks as a whole object.
+
+**Gestalt principles: Symmetry**
+
+A third fact about our tendency to see objects is captured in the Gestalt principle of
+Symmetry. It states that we tend to parse complex scenes in a way that reduces the
+complexity. Our vision automatically organizes and interprets the data so as to simplify it and give it symmetry.
 
 **Gestalt principles: Figure/Ground**
 
+The next Gestalt principle that describes how our visual system structures the data
+it receives is Figure/Ground. This principle states that our mind separates the visual
+field into the figure (the foreground) and ground (the background). The foreground consists of those elements of a scene that are the object of our primary attention, and
+the background is everything else.
+
 **Gestalt principles: Common Fate**
+
+The last principle is the Common fate which unlike the previuos principles concern the movement of objects.
+It states that moving objects moving togheter are perceived as grouped. 
+
+<hr \>
+
+### Reading
+
+The perception of text is important to interface design. There are several stages of the reading process:
+1. Input of the visual perception of the text
+2. The text is decoded with reference to an internal representation of language. 
+3. Sintactic and semantic analysis of the text (_which is not relevant to interface design_)
+
+During reading the eye makes burst movements which takes 6% of the total time reading. The remaining 96% is used in fixation periods. 
+The complexity of text is proportional to the number of regressions made (the eye goes back in the line).
+
+Empirical proofs have shown that entire words are recoinized as single character, we recognize words using word shape => _it's more difficult to read a capitalized text._
+
+The speed at which text can be read is a measure of its legibility. Experiments have
+shown that standard font sizes of 9 to 12 points are equally legible, given proportional spacing between lines. Similarly line lengths of between 6 and 14 cm are equally legible. However, there is evidence that reading
+from a computer screen is slower than from a book.
+
+### Hearing 
+
+This sense conveys a lot of information to the brain. The air virbration are perceived by the hear and trasmists them, through various stages, to the auditory nerves. 
+
+The ear receives air
+vibrations that are collected
+and aplified by the auricle
+(padiglione auricolare)
+hitting the eardrum
+(timpano) that moves three
+little bones: malleus, incus
+and stape (martello, incudine e staffa) that move a jelly-like
+substance in the cochlea (or inner ear), which activates tiny hair
+cells trasmitting information to the auditory nerve and to the brain.
 
 
 
