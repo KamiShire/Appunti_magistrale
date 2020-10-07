@@ -4,7 +4,7 @@ Build large software system is complex, the complexity is faced by two approache
  * __Models__
 
 ## Abstraction
->  process of formulating generalized ideas or concepts by extracting common qualities from specific examples.
+>  Process of formulating generalized ideas or concepts by extracting common qualities from specific examples.
 
 In the course will be explored two main abstraction used to manage large and complex distributed systems: 
 * Service: __structural__ abstraction. Expose functions. *Service Oriented Architecture (SOA)*

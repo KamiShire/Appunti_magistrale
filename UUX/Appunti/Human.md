@@ -6,7 +6,7 @@ Human being is a complex system so in HCI we represent it using a simplified _mo
 
 In 1983, Card, Moran and Newell described the Model Human Processor,
 which is a simplified view of the human processing involved in interacting with
-computer systems. The model comprises three subsystems: t**he perceptual system**,
+computer systems. The model comprises three subsystems: the **perceptual system**,
 handling sensory stimulus from the outside world, the **motor system**, which controls
 actions, and the **cognitive system**, which provides the processing needed to connect
 the two.
@@ -139,10 +139,98 @@ cells trasmitting information to the auditory nerve and to the brain.
 
 ## Memory
 As well as storing all our factual knowledge, our memory contains our knowledge of actions or procedures.
+The are three type of memory or memory function:
+* **Sensory memory**
+* **Short-term memory or working memory**
+* **Long-term memory**
+
+### Sensory memory
+Acts as a buffer for sensorial stimuli. There is one sensory memory for each sensory channel:
+* Iconic memory for visual stimuli
+* Echoic memory for aural stimuli (used for stereophonic comparison, but
+also for retention of the stimulus)
+* Tactile memory for touch
+* Etc.
+
+In terms of **percistence**, stimulus is maintained for a few tenth of second (about 0.5 sec for vision)
+and is continuously rewritten. Only a minimal quantity of data is maintained, most of it is lost
+immediately or during data processing.
+
+Information is passed from sensory memory into short-term memory by **attention**, thereby filtering the stimuli to only those which are of interest at a given time.
+
+#### Design
+Reduce mental load needed to interpret sensory stimulus. Which can be done using simple, well di well differentiated,solidly placed in the overall interface. 
+
+Use the theory of Gestalt the structuring of the perceipt. Allow for grouping of connected pieces, make differences evident when they are meaningful, hide differences when they are not. 
 
 
+### Short-term memory
+Called also working memory, is used to store data relevant for the tasks currentlyi n execution are maintained and processed.
 
+Short-term memory has a limited capacity. We can remember 7 (+/- 2) chuncks of information (_like 7 groups of digits_).  The
+limited capacity of short-term memory produces a subconscious desire to create
+chunks, and so optimize the use of the memory. The successful formation of a chunk
+is known as closure. 
+
+
+The short-memory is always full, new chunks remove old ones and the latters are lost. 
+
+Retention is amplified by importance first and freshness second.
+
+#### Design
+Reduce the mental load necessary to maintain dialog context and consistency: Have fewer chunks(complex if needed) to retain in mind(7±2 distinct elements).
+Help recover disappeared chunks from the visual context.
+Help retain greater quantity of information through grouping.
+
+That's not so valid with menus and list, they are not required to be memorized because are always available in the interface.
+
+### Long-term memory
+
+In the long-term memory we store everything we "know". It has relevant differences from short-term memory:
+* The size in possibly unbounded
+* Slower access time
+* Forgetting occurs more slowly
+
+There are two types of long-term memory:
+1. **Episodic memory**: represents our memory of events and experiences in a serial form.
+
+2. **Semantic memory**:  structured record
+of facts, concepts and skills that we have acquired. 
+
+The information in semantic memory is derived from that in our episodic memory, such that we can learn new facts or concepts from our experiences.
+
+Semantic memory is structured in some way to allow access to information,
+representation of relationships between pieces of information, and inference. This is known as _semantic network_.
+
+  <img src="./images/long_mem.png" alt="drawing" width="450"/>
+
+  Our knowledge is organized by association. 
+
+  Disconnected concepts (without logical connections to other facts of our knowledge) are harder to retain than connected ones
   
+  Abstract concepts are harder to retain than concrete concepts 
+  
+  Concepts with a higher level of emotional connection are easier to retain than dry ones
+ 
+##### Loss of information
+We can forget things, the are two theories about forgetting:
+* **Decay**: memories not access for long time may eventually be forgotten.
+* **Interference**: the acquisistion of new information causes the loss of old information (*we replace it*).
+
+It is impossible to prove that we do forget: appearing to have forgotten something may just be caused by not being able to retrieve it. Like in interference we may *replace* information but it's not totally true. 
+In fact, *proactive inhibition* occurs when old memory trace breaks through and interferes with new information.
+
+On this lines, information may not be recalled but may be recognized, or
+may be recalled only with prompting.
+
+#### Design
+* Never rely on plain memory of facts
+* Try to convey a narrative in the sequence of steps. Alternatively, iconic or visual memory is better that episodic or punctual memory
+* Allow for easy abstraction to allow for simpler chunks to be retained.
+* Use verbs for actions and nouns for concepts. Create a narrative for the interaction
+
+
+
 
 
 
