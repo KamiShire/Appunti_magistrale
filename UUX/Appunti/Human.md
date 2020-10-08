@@ -229,10 +229,58 @@ may be recalled only with prompting.
 * Allow for easy abstraction to allow for simpler chunks to be retained.
 * Use verbs for actions and nouns for concepts. Create a narrative for the interaction
 
+<hr />
+
+## Processing
+Reasoning is the process by which we use the knowledge we have to draw conclusions
+or infer something new about the domain of interest. There are a number of different types of reasoning: _deductive, inductive and abductive_. 
+
+### Deductiove reasoning
+Deductive reasoning derives the logically necessary conclusion from the given premises. But 
+Deductive reasoning is therefore often misapplied, the logical conclusion doens't correspond to the truth at all time. 
+<!-- da rivedere -->
+One explanation for this is that people bring their world knowledge into the reasoning process. There is good reason for this. It allows us to take short cuts which makendialog and interaction between people informative but efficient. 
 
 
+### Inductive reasoning
+Induction is generalizing from cases we have seen to infer information about cases
+we have not seen. In spite of its unreliability, induction is a useful process, which we use constantlyin learning about our environment
+
+### Abductive reasoning
+The third type of reasoning is abduction. Abduction reasons from a fact to the action
+or state that caused it. This is the method we use to derive explanations for the events
+we observe. 
+
+> _For example, suppose we know that Sam always drives too fast when she has been drinking. If we see Sam driving too fast we may infer that she has been drinking. This too is unreliable since there may be another reason why sheis driving fast._
 
 
+In spite of its unreliability, it is clear that people do infer explanations in this way,
+and hold onto them until they have evidence to support an alternative theory or
+explanation. This can lead to problems in using interactive systems. If an event
+always follows an action, the user will infer that the event is caused by the action
+unless evidence to the contrary is made available. If, in fact, the event and the action
+are unrelated, confusion and even error often result.
 
 
-   
+## Problem solving
+If reasoning is a means of inferring new information from what is already known,
+problem solving is the process of finding a solution to an unfamiliar task, using the
+knowledge we have.T here are a number of different views of how people
+solve problems. 
+
+### Behaviourism
+Problem solving is based on either applying existing rules, or by trial and error, exploring possible solutions until a good one is found.
+
+### Gestalt theory
+The explanation illustrated by the behaviourism model was insufficient to explain entirelly the human problem-solving behavior.
+
+Problem solving is both **productive** and **reproductive**. Reproductive problem solving draws on previous experience as the behaviorists claimed, but productive problem solving involves insight and restructuring of the problem. 
+
+### Problem space theory
+The problem is expressed as the search for a
+path inside a space where there is an initial state (the problem) and a final
+state (the solution), Possible desirable intermediate places are identified,
+and the problem solving is expressed as finding a path to a closer
+intermediate place, and then analysis is started again from the closer
+position. Each subproblem is analyzed looking for euristics, competencies
+and analogies.
