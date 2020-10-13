@@ -84,4 +84,18 @@ choreography. The term choreography indicates the absence of a central agent tha
 
 ## Business Process Modelling Foundation
 
+<p align="center">
+<img src="./images/bpm_ab.png" alt="drawing" width="500"/>
+</p>
 
+Business processes consist of activities whose coordinated execution realizes some business goal. These activities can be system activities, user interaction activities, or manual activities. Manual activities are not supported by
+information systems. 
+
+Certain parts of a business process can be enacted by workflow technology.
+A **workflow management system** can make sure that the activities of a business
+process are performed in the order specified, and that the information systems
+are invoked to realize the business functionality. This relationship between
+business processes and workflows is represented by an association between
+the respective classes. 
+
+With regard to the types of activities mentioned, system activities are associated with workflows, since system activities can participate in any kind of workflow, system workflow or human interaction workflow.
