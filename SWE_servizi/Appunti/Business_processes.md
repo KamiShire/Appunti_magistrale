@@ -66,8 +66,7 @@ business goals of a company. Initiation of a process instance typically follows 
  Process enactment needs to cater to a correct process orchestration, guaranteeing that
 the process activities are performed according to the execution constraints specified in the process model.
 
-Process monitoring is an impor-
-tant mechanism for providing accurate information on the status of business
+Process monitoring is an important mechanism for providing accurate information on the status of business
 process instances. This information is valuable, for instance, to respond to a
 customer request that inquires about the current status of his case.
 
@@ -99,3 +98,121 @@ business processes and workflows is represented by an association between
 the respective classes. 
 
 With regard to the types of activities mentioned, system activities are associated with workflows, since system activities can participate in any kind of workflow, system workflow or human interaction workflow.
+
+### Abstraction
+To capture the complexity in business process management, different abstraction concepts are introduced. A traditional abstraction concept in computer science is the separation of modelling levels, called **horizontal abstraction**.
+
+Another type of abstraction is made base on the necessity to investigate separated subdomains. In order to investigate them separately (*divide-et-impera*) they need to be represented separately. This approach is called **vertical abstraction**
+
+#### Horizontal Abstraction
+<p align="center">
+<img src="./images/h_abs.png" alt="drawing" width="500"/>
+</p>
+
+* **M0**: the instance level reflects the concrete entities that are involved in business processes. Executed activities, concrete data values, and resources and persons are represented at the instance level.
+
+* **M1**: set of similar entities at the instance level are identified and classified at the model level. Models are expressed in metamodels that are associated with _notations_, often of a graphical nature. 
+
+* **M2**: the complete set of concepts and associations between concepts is called metamodel. A metamodel becomes useful if there is a notation for this metamodel that allows expressing models in a convenient way
+
+
+#### Vertical Abstraction
+In the vertical abstraction distinct modelling subdomains are identified. Process modelling integrates the
+modelling efforts that are conducted in the other subdomains.
+
+Process modelling defines the glue between the subdomains, it relates functions of a business process with execution constraints.
+
+Data aspects are covered because particular process instances
+may depend on the structure and value of data involved in a particular business process. Data dependencies between activities need to be taken into account in process model design.
+<p align="center">
+<img src="./images/v_abs.png" alt="drawing" width="500"/>
+</p>
+
+##### Function modelling
+The functional model investigates the units of work that are being enacted
+in the context of business processes.
+
+##### Information modelling
+Proper representation of data in business processes
+is important, because decisions made during a business process depend on
+particular data values.
+Data dependencies between activities need to be
+taken into account in order to avoid situations in which a function
+requires certain data not available at that time.
+
+##### Organization modelling
+Activities in the business process can then be
+associated with particular roles or departments in the organization.
+
+##### IT Landscape modelling
+Activities in a business process are performed by or with the assistance of information systems. The operational information technology landscape, that is, the information systems, their relationships, and their programming interfaces, needs to be represented to use the functionality provided by the
+information systems.
+<hr/>
+
+#### Process Models
+<p align="center">
+<img src="./images/proc_mod.png" alt="drawing" width="500"/>
+</p>
+In the M0 layer there are process instances that reflect the actual
+occurrences of a business process. Each process instance is an instance of a process model in the model layer M1. Process models are described by process metamodels, building the M2 layer.
+In order to express process models, there needs to be a notation in place that provides notational elements for the conceptual elements of process metamodels.
+
+##### Process metamodel
+
+In metamodelling, the concepts to be represented are models.
+
+* **Process Model**:  represents a blue print for a set of process instances with a similar structure. Process models have a two-level hierarchy, so that each process model consists of a set of activity models. Each process model consists of nodes and directed edges.
+
+* **Edge**: express the relationships between nodes
+in a process model.
+
+
+* **Node**: can represent an activity model, an event
+model, or a gateway model.
+    * **Activity Model**: describes units of work conducted in a
+business process. Each activity model can appear at most once in a process model. No activity model can appear in multiple process models.
+
+    * **Event Model**:  Event models capture the occurrence of states relevant for a business process. Process instances start and end with events, so process models start and end with event models.
+
+    * **Gateway Model**:  Gateways are used to express control flow constructs.
+
+<p align="center">
+<img src="./images/proc_metamod.png" alt="drawing" width="500"/>
+</p>
+
+Each node is associated with at least one edge. The different types of nodes
+are represented by the generalization relation. Activity models reflect the work
+units to be performed, event models represent the occurrence of states relevant
+for the business process, and gateway models represent execution constraints
+of activities, such as split and join nodes.
+
+#### Modeling Data
+Business processes operate on data. Explicitly representing data, data types,
+and data dependencies between activities of a business process puts a business
+process management system in a position to control the transfer of relevant
+data as generated and processed during processes enactment.
+<p align="center">
+<img src="./images/dat_model.png" alt="drawing" width="500"/>
+</p>
+
+Data modelling is at the core of database design. The Entity Relationship
+approach is used to classify and organize data in a given application domain.
+
+
+#### Modeling Organization
+An important task of a business process management system is the coordination of work among the personnel of an enterprise. To fulfill this, the system
+has to be provided with information on the organizational structures.
+<p align="center">
+<img src="./images/org_model.png" alt="drawing" width="500"/>
+</p>
+
+The metamodel level
+provides the means to express models, in this case organizational models. Concepts at this level are positions, roles, teams, and relationships between positions like supervisor. 
+The general principle behind organization modelling is the resource,an entity that can perform work for the enterprise. The general concept of resource subsumes humans and other resources.
+
+<p align="center">
+<img src="./images/org_metamodel.png" alt="drawing" width="500"/>
+</p>
+
+
+
